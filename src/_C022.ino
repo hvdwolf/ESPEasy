@@ -18,7 +18,7 @@
 
 #define CPLUGIN_022
 #define CPLUGIN_ID_022         22
-#define CPLUGIN_NAME_022       "Pimatic RestApi"
+#define CPLUGIN_NAME_022       "Pimatic RestApi  [DEVELOPMENT]"
 
 bool CPlugin_022(byte function, struct EventStruct *event, String& string)
 {
@@ -138,7 +138,7 @@ bool pimaticUpdateVariable(struct EventStruct *event, byte varIndex, float value
 
   String authHeader = "";
   String url;
-  
+
   MakeControllerSettings(ControllerSettings);
   LoadControllerSettings(event->ControllerIndex, ControllerSettings);
   C022_DelayHandler.configureControllerSettings(ControllerSettings);
