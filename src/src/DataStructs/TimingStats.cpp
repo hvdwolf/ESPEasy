@@ -216,6 +216,7 @@ String getMiscStatsName(int stat) {
     case C018_DELAY_QUEUE:
     case C019_DELAY_QUEUE:
     case C020_DELAY_QUEUE:
+    case C022_DELAY_QUEUE:
     {
       String result;
       result.reserve(16);

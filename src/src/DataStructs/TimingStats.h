@@ -70,6 +70,7 @@
 # define HANDLE_SCHEDULER_TASK   53
 # define HANDLE_SERVING_WEBPAGE  54
 
+# define C022_DELAY_QUEUE        60
 class TimingStats {
 public:
 

@@ -29,6 +29,7 @@
 #define TIMER_C018_DELAY_QUEUE             23
 #define TIMER_C019_DELAY_QUEUE             24
 #define TIMER_C020_DELAY_QUEUE             25
+#define TIMER_C022_DELAY_QUEUE             26
 
 #define TIMING_STATS_THRESHOLD             100000
 

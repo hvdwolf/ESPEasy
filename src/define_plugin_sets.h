@@ -104,7 +104,7 @@ To create/register a plugin, you have to :
     #ifndef WEBSERVER_WIFI_SCANNER
         #define WEBSERVER_WIFI_SCANNER
     #endif
-#endif 
+#endif
 
 #ifndef USE_CUSTOM_H
     #ifndef USES_SSDP
@@ -891,6 +891,7 @@ To create/register a plugin, you have to :
 #ifdef CONTROLLER_SET_EXPERIMENTAL
   //#define USES_C016   // Cache controller
   //#define USES_C018   // TTN/RN2483
+  #define USES_C022    // Pimatic RestApi
 #endif
 
 
