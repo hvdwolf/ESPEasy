@@ -113,22 +113,24 @@ bool CPlugin_022(byte function, struct EventStruct *event, String& string)
   return success;
 }
 
-bool do_process_c022_delay_queue(int controller_number, const C022_queue_element& element, ControllerSettingsStruct& ControllerSettings);
 
-bool do_process_c022_delay_queue(int controller_number, const C022_queue_element& element, ControllerSettingsStruct& ControllerSettings) {
+/* bool do_process_c022_delay_queue(int controller_number, const C022_queue_element& element, struct EventStruct *event, ControllerSettingsStruct& ControllerSettings);
+
+bool do_process_c022_delay_queue(int controller_number, const C022_queue_element& element, struct EventStruct *event, ControllerSettingsStruct& ControllerSettings) {
   WiFiClient client;
   if (!try_connect_host(controller_number, client, ControllerSettings))
     return false;
 
   // This will send the request to the server
-  String request = create_http_request_auth(controller_number, element.controller_idx, ControllerSettings, F("GET"), element.txt);
+  //String request = create_http_request_auth(controller_number, element.controller_idx, ControllerSettings, F("GET"), element.txt);
+  String request = create_http_request_auth(controller_number, event->idx, ControllerSettings, F("GET"), element.txt);
 
 #ifndef BUILD_NO_DEBUG
   addLog(LOG_LEVEL_DEBUG, element.txt);
 #endif
   return send_via_http(controller_number, client, request, ControllerSettings.MustCheckReply);
 }
-
+*/
 
 //********************************************************************************
 // Pimatic updateVariable
